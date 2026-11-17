@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Second layer of the zero-network policy. Cleartext traffic is forbidden everywhere and
+  no trust anchors are configured, so no TLS connection can be established either.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors />
+    </base-config>
+</network-security-config>
